@@ -4,3 +4,11 @@ BROWSER_NAME: edge
 Messages:
   ERROR:
     invalid_login_error: Invalid username or password
+
+ValidLoginData:
+  Administrator: 
+    username: admin 
+    password: password
+  Physician:
+    username: physician
+    password: physician

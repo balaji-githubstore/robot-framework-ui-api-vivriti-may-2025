@@ -1,0 +1,3 @@
+${testcase_id};${username};${password};${language};${expected_title}
+TC1;accountant;accountant;English (Indian);OpenEMR
+TC2;admin;pass;English (Indian);OpenEMR

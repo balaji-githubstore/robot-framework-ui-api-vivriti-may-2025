@@ -2,6 +2,7 @@
 Documentation       Manages the commonfunctionalities of web ui automation
 
 Library     SeleniumLibrary
+Library     RPA.JSON
 
 # *** Variables ***
 # ${BASE_URL}     https://demo.openemr.io/b/openemr
@@ -18,6 +19,7 @@ Launch Browser And Navigate To Url
     Set Selenium Implicit Wait    ${default_timeout}s
     Set Selenium Timeout    ${default_timeout}s
     Set Screenshot Directory    path=${EXECDIR}${/}Screenshots
+    # Setup Json Data
     Go To    url=${BASE_URL}
 
 Click Interactable Element
@@ -29,7 +31,6 @@ Click Interactable Element
     Wait Until Element Is Visible    ${locator}     ${timeout}
     Wait Until Element Is Enabled    ${locator}     ${timeout}
     Click Element    ${locator}
-
 
 Set Text To The Element
     [Arguments]     ${locators}     ${text}
@@ -44,3 +45,8 @@ Click Until Element Succeed
     [Arguments]     ${locator}  ${retry}=${default_timeout}s     ${retry_interval}=${default_timeout}s
     Wait Until Keyword Succeeds    ${retry}    ${retry_interval}    Click Element    ${locator}
     
+    
+Setup Json Data
+    ${json}    Load JSON from file       ${EXECDIR}${/}Data${/}demo.json
+    Set Global Variable    ${JSON}     ${json} 
+
