@@ -1,0 +1,24 @@
+extra_small_timeout: 2
+small_timeout: 5
+medium_timeout: 10
+default_timeout: 40
+large_timeout: 60
+extra_large_timeout: 120
+double_extra_large_timeout: 320
+small retries: 5
+medium_retries: 10
+default_retries: 20
+large_retries: 30
+small_retry_interval: 0.5
+medium_retry_interval: 1
+large_retry_interval: 2
+extra_large_retry_interval: 5
+test_case_timeout: 7200
+
+# list:
+#   - jack
+#   - john 
+
+# dic:
+#   name1: john
+#   name2: john1233
