@@ -17,4 +17,4 @@ Invalid Login Test
     Enter Password    johjn12
     Select Language By Lable   English (Indian)
     Click Login
-    Element Text Should Be    //p[contains(normalize-space(),'Invalid')]    Invalid username or password
+    Element Text Should Be    //p[contains(normalize-space(),'Invalid')]    ${Messages.ERROR.invalid_login_error}

@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Robot Framework: Launch Template",
+      "type": "robotframework-lsp",
+      "request": "launch",
+      "terminal": "integrated",
+      "cwd":"${workspaceFolder}",
+      "env": {},
+      "args": [
+        "-dResults",
+        "-V ./../Configuration/timeout-config-qa.yaml",
+        "-V ./../Data/open-emr-pipeline.yaml"
+      ]
+    }
+  ]
+}

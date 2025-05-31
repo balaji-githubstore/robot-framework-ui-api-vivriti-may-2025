@@ -3,9 +3,9 @@ Documentation       Manages the commonfunctionalities of web ui automation
 
 Library     SeleniumLibrary
 
-*** Variables ***
-${BASE_URL}     https://demo.openemr.io/b/openemr
-${BROWSER_NAME}     chrome
+# *** Variables ***
+# ${BASE_URL}     https://demo.openemr.io/b/openemr
+# ${BROWSER_NAME}     chrome
 
 *** Keywords ***
 Launch Browser And Navigate To Url

@@ -1,0 +1,6 @@
+BASE_URL: https://demo.openemr.io/b/openemr
+BROWSER_NAME: edge
+
+Messages:
+  ERROR:
+    invalid_login_error: Invalid username or password
